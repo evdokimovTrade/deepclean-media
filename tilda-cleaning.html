@@ -234,7 +234,7 @@
 #contacts .concta{display:flex;flex-direction:column;gap:10px;margin:16px 0 0}
 .faqa{padding:0 16px 14px;font-size:13.5px;color:var(--ink2);line-height:1.5}.faqa ul{margin:0;padding-left:18px}.faqa li{margin:4px 0}.faqa p{margin:0}/* ===== Десктоп-версия (≥900px). Подключается последним, перекрывает мобильные правила. ===== */
 @media(min-width:900px){
-  .app{max-width:1160px;box-shadow:0 0 0 1px var(--line)}
+  .app{max-width:1500px;box-shadow:0 0 0 1px var(--line)}
 
   /* Шапка: крупный кликабельный номер вместо иконки */
   .hdr{padding:18px 44px}
@@ -277,13 +277,13 @@
 
   /* Калькулятор */
   .acgrid{grid-template-columns:repeat(3,1fr)}
-  .tgrid{grid-template-columns:1fr 1fr;max-width:860px}
+  .tgrid{grid-template-columns:1fr 1fr}
   .seg[data-group="size"]{grid-template-columns:repeat(5,1fr)}
-  .cout,.actot{max-width:640px}
+  .cout,.actot{max-width:none}
   #calc .cta{display:inline-flex;width:auto;min-width:300px;margin-right:12px}
 
-  /* Другие услуги — две колонки */
-  .osgrid{grid-template-columns:1fr 1fr;max-width:860px}
+  /* Другие услуги — две колонки на всю ширину */
+  .osgrid{grid-template-columns:1fr 1fr}
 
   /* Контакты — горизонтально: текст слева, кнопки справа */
   #contacts{display:grid;grid-template-columns:1fr 1fr;column-gap:30px;align-items:center}
